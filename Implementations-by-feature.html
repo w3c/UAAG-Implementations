@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-<title>UAAG 2.0 Implementation Report: Implementations by feature</title>
+<title>Line Break</title>
 <link rel="stylesheet" href="http://www.w3.org/WAI/wai-main.css" type="text/css" />
 
   <!--[if IE 7]><link rel="stylesheet" href="/WAI/ie-old.css" type="text/css" media="all" /><![endif]-->
@@ -78,6 +78,10 @@ tr.h1 td.whole-line, tr.h2 td.whole-line {
 		tr.h1 td.whole-line, tr.h2 td.whole-line { font-style: bold; }
 
 </style>
+<!-- Copyright 2000, 2001, 2002, 2003 Macromedia, Inc. All rights reserved. -->
+<!-- Copyright 2000, 2001, 2002, 2003 Macromedia, Inc. All rights reserved. -->
+<!-- Copyright 2000, 2001, 2002, 2003 Macromedia, Inc. All rights reserved. -->
+<!-- Copyright 2000, 2001, 2002, 2003 Macromedia, Inc. All rights reserved. -->
 </head>
 <body>
 <div id="controls">
@@ -168,7 +172,10 @@ Guidelines Working Group (UAWG) produced in anticipation of Candidate Recommenda
 	    Firefox, Chrome, IE, Opera, Safari </p>
 	    <p><a href="https://support.mozilla.org/en-US/questions/981640">Instructions for disabling images in FF</a><br />
 	    </p></td>
-		<td class="pri"><a href="http://smallbusiness.chron.com/turn-off-images-internet-explorer-49962.html">Instructions for disabling images in IE</a></td>
+		<td class="pri"><p><a href="http://smallbusiness.chron.com/turn-off-images-internet-explorer-49962.html">
+		  <!-- MENU-LOCATION=NONE -->
+      </a>IE</p>
+	  <p><a href="http://smallbusiness.chron.com/turn-off-images-internet-explorer-49962.html">Instructions for disabling images in IE</a></p></td>
 	</tr>
 	<tr class="h3">
 		<td class="line-number">20</td>
@@ -216,8 +223,8 @@ Guidelines Working Group (UAWG) produced in anticipation of Candidate Recommenda
 		<td class="line-number">29</td>
 		<td class"whole-line"><strong class="title"> 1.2.1 Support Repair by Assistive Technologies:</strong>  If text alternatives for non-text content are missing or empty, the user agent doesn't attempt to repair the text alternatives by substituting text values that are also available to assistive technologies (e.g.&nbsp;image file name). (Level AA)</td>
 		<td class="pri">AA</td>
-		<td class="pri">&nbsp;</td>
-		<td class="pri">&nbsp;</td>
+		<td class="pri">Firefox, Chrome, IE, Opera, Safari </td>
+		<td class="pri">Firefox, Chrome, IE, Opera, Safari </td>
 	</tr>
 	<tr class="h3">
 		<td class="line-number">32</td>
@@ -244,8 +251,8 @@ Guidelines Working Group (UAWG) produced in anticipation of Candidate Recommenda
 		<td class="line-number">34</td>
 		<td class"whole-line"><strong class="title">1.3.3 Highlighting Active Keyboard Focus:</strong>   The user can set all of the following characteristics of active keyboard focus highlighting, overriding any values specified by the author: (Level AA)<br/> *&nbsp;Foreground color<br/> *&nbsp;Background color<br/> *&nbsp;Border (color, style, and thickness)<br/> *&nbsp;Text cursor blink rate</td>
 		<td class="pri">AA</td>
-		<td class="pri">css</td>
-		<td class="pri">&nbsp;</td>
+		<td class="pri"> extension Stylish works on chrome, ff, safari, opera</td>
+		<td class="pri">extension Stylish works on chrome, ff, safari, opera</td>
 	</tr>
 	<tr class="h3">
 		<td class="line-number">35</td>
@@ -287,14 +294,16 @@ Guidelines Working Group (UAWG) produced in anticipation of Candidate Recommenda
 		<td class="line-number">44</td>
 		<td class"whole-line"><strong class="title">1.4.4 Configured and Reflowed Text Printing:</strong>  The user can print the rendered content, and the following are all true: (Level AA)<br/> *&nbsp;any visual, non-time-based, rendered content can be printed<br/> *&nbsp;the user can choose between available printing devices<br/> *&nbsp;the user can have content printed as it is rendered on screen, reflecting any user scaling, highlighting, and other modifications<br/> *&nbsp;the user can have printed content reflow as if the top-level viewports had been resized to match the horizontal dimension of the printing device's printable area</td>
 		<td class="pri">AA</td>
-		<td class="pri">&nbsp;</td>
+		<td class="pri"><p>directions for using the debugger in Chrome to print the rendered view. (A manual hack)<br />
+          <a href="https://superuser.com/questions/456700/how-do-i-print-with-the-screen-stylesheet">https://superuser.com/questions/456700/how-do-i-print-with-the-screen-stylesheet</a></td>
 		<td class="pri">&nbsp;</td>
 	</tr>
 	<tr class="h3">
 		<td class="line-number">45</td>
 		<td class"whole-line"><strong class="title">1.4.5 Default to platform text settings:</strong>  The user can specify that platform text settings be used as the default values for text configuration.. (Level AA) </td>
 		<td class="pri">AA</td>
-		<td class="pri">&nbsp;</td>
+		<td class="pri">Many examples of high contrast settings carrying over from OS to the browser. 
+	    <!-- MENU-LOCATION=NONE -->But we couldn't find OS text configuration settings that carried over to the browser. May need more research</td>
 		<td class="pri">&nbsp;</td>
 	</tr>
 	<tr class="h3">
@@ -302,8 +311,11 @@ Guidelines Working Group (UAWG) produced in anticipation of Candidate Recommenda
 		<td class"whole-line"><p><strong class="title"> 1.4.6 Advanced text formatting:</strong>  The user can globally set all of the following characteristics of visually rendered blocks of text: (Level AAA)<br/> *&nbsp;Capitalization (overriding upper case and small caps style)<br/> *&nbsp;Word-breaking properties (e.g.&nbsp;auto-hyphenation)<br/> *&nbsp;Borders<br/> *&nbsp;Word spacing (choosing from a range of at least 5 values)</p>
 	    <p><strong class="title">Note:</strong> This success criteria does not apply to text entered as all caps. Content authors are encouraged to use styles instead of typing text as all caps.</p></td>
 		<td class="pri">AAA</td>
-		<td class="pri">&nbsp;</td>
-		<td class="pri">&nbsp;</td>
+		<td class="pri">Firefox, IE, Opera, Safari - user style sheet
+	    <!-- MENU-LOCATION=NONE -->including capitalization, auto-hypenation, borders, word-spacing.</td>
+		<td class="pri">Firefox, IE, Opera, Safari - user style sheet
+          <!-- MENU-LOCATION=NONE -->
+        including capitalization, auto-hypenation, borders, word-spacing.</td>
 	</tr>
 	<tr class="h3">
 		<td class="line-number">50</td>
@@ -417,16 +429,16 @@ Guidelines Working Group (UAWG) produced in anticipation of Candidate Recommenda
 		<td class="line-number">72</td>
 		<td class"whole-line"><strong class="title">1.8.5 Allow Zoom:</strong>   The user can rescale content within top-level graphical viewports as follows: (Level A)<br/> *&nbsp;Zoom in: to 500% or more of the default size<br/> *&nbsp;Zoom out: to 10% or less of the default size, so the content fits within the height or width of the viewport</td>
 		<td class="pri">A</td>
-		<td class="pri">&nbsp;</td>
-		<td class="pri">&nbsp;</td>
+		<td class="pri">All zoom, but the user must use Stylish to constrain horizontal scrolling</td>
+		<td class="pri">All zoom, but the user must use Stylish to constrain horizontal scrolling</td>
 	</tr>
 	<tr class="h3">
 		<td class="line-number">73</td>
 		<td class"whole-line"><p><strong class="title">1.8.6 Maintain Point of Regard:</strong>   The point of regard remains visible within the viewport when the viewport is resized, when content is zoomed or scaled, or when content formatting is changed. (Level A) </p>
 	    <p><strong class="title">Note:</strong> When the point of regard is larger than the viewport, the user agent keeps visible the beginning of the point of regard according to the current language's reading order (e.g.&nbsp;top-left in English)</p></td>
 		<td class="pri">A</td>
-		<td class="pri">&nbsp;</td>
-		<td class="pri">&nbsp;</td>
+		<td class="pri">Chrome</td>
+		<td class="pri">Internet Explorer, Safari</td>
 	</tr>
 	<tr class="h3">
 		<td class="line-number">75</td>
