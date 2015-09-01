@@ -104,7 +104,7 @@ tr.h1 td.whole-line, tr.h2 td.whole-line {
 <h1>UAAG 2.0 Implementation Report Detail: Feature by Feature</h1>
 <dl>
   <dt>Updated on:</dt>
-  <dd>20 August, 2015</dd>
+  <dd>1 September, 2015</dd>
   <dt>This Version (Github)</dt>
   <dd><a href="http://w3c.github.io/UAAG-Implementations/Implementations-by-feature">http://w3c.github.io/UAAG-Implementations/Implementations-by-feature</a></dd>
   <dt>Latest Version</dt>
@@ -444,44 +444,55 @@ Guidelines Working Group (UAWG) produced in anticipation of Candidate Recommenda
 		<td class="line-number">75</td>
 		<td class"whole-line"><strong class="title"> 1.8.7 Customize Viewport Highlighting:</strong>  When highlighting viewports as specified by 1.8.1 Highlight Viewport, the user can customize attributes of the viewport highlighting mechanism (e.g.&nbsp;color and width of borders). (Level AA)</td>
 		<td class="pri">AA</td>
-		<td class="pri">&nbsp;</td>
+		<td class="pri">@@ Firefox highlights frames, no one else. No customizations. FF puts dotted line around viewports.Can use F6 to move between viewports in all major browsers</td>
 		<td class="pri">&nbsp;</td>
 	</tr>
 	<tr class="h3">
 		<td class="line-number">76</td>
 		<td class"whole-line"><strong class="title">1.8.8 Allow Viewport Resize:</strong>  The user can resize  viewports within restrictions imposed by the platform, overriding any values specified by the author. (Level AA) </td>
 		<td class="pri">AA</td>
-		<td class="pri"><p>youtube player allow resizing per video, as do most other players. Chromesupports this for edit fields, but F does not. New HTML5 form attrib (resize) in Chome, Safari, and Firefox allows changing size of edit field, but no user override. </p>
-	    <p>No keyboard access to the resize handle is implemented. No resize available for single line edit box.I wonder who supports it for browser generated dialog boxes (need to find these) letting user override any author settings fixing the window size. </p></td>
-		<td class="pri">&nbsp;</td>
+		<td class="pri"><p>youtube player allow resizing per video, as do most other players. Chrome supports this for edit fields, but F does not. New HTML5 form attrib (resize) in Chome, Safari, and Firefox allows changing size of edit field, but no user override. </p>
+	    <p>No keyboard access to the resize handle is implemented. No resize available for single line edit box.I wonder who supports it for browser generated dialog boxes (need to find these) letting user override any author settings fixing the window size. </p>
+	    <p>1.8.8 is doable for      textarea, video players, frames, and iframes with the mouse.      May need the addition of Stylish to add resizability in FF,      Safari, Chrome. none have functionality from the keyboard. IE8      does not resize textarea.</p></td>
+		<td class="pri">youtube player allow resizing per video, as do most other players. May need the addition of Stylish to add resizability in FF,      Safari, Chrome. </td>
 	</tr>
 	<tr class="h3">
 		<td class="line-number">77</td>
 		<td class"whole-line"><p><strong class="title">1.8.9 Provide Viewport History:</strong>   For user agents  that implement a history mechanism for top-level viewports (e.g.&nbsp;"back" button), the user can return to any state in the viewport history that is allowed by the content, including: (Level AA)<br/> (a)&nbsp;restored point of regard<br/> (b)&nbsp;input focus, and<br/> (c)&nbsp;user's form field entries</p>
 	    <p><strong class="title">Note:</strong> It is recommended that selection also be restored.</p></td>
 		<td class="pri">AA</td>
-		<td class="pri">&nbsp;</td>
-		<td class="pri">&nbsp;</td>
+		<td class="pri"><p>IE maintains point of regard and form content      and input focus</p>
+	    <p>chrome maintains point of regard and form      content but not input focus</p>
+        <p>change - safari maintains point of regard and      form content and input focus</p>
+        <p>all tested on <a href="https://www.cs.tut.fi/%7Ejkorpela/www/testel.html">https://www.cs.tut.fi/~jkorpela/www/testel.html</a> (plain and simple html)</p>
+        <p>&nbsp;</p></td>
+		<td class="pri"><p>FF maintains point of regard and form content      and input focus</p>
+	    <p>ff is the only browser to maintain selection      highlighting</p></td>
 	</tr>
 	<tr class="h3">
 		<td class="line-number">79</td>
 		<td class"whole-line"><strong class="title">1.8.10 Allow Top-Level Viewport Open on Request:</strong>  The user can specify whether author content can open new top-level viewports (e.g.&nbsp;windows or tabs). (Level AA)</td>
 		<td class="pri">AA</td>
-		<td class="pri">&nbsp;</td>
-		<td class="pri">&nbsp;</td>
+		<td class="pri">FCIOS</td>
+		<td class="pri">all desktop browsers have a configuration setting for      blocking popup window</td>
 	</tr>
 	<tr class="h3">
 		<td class="line-number">80</td>
 		<td class"whole-line"><strong class="title">1.8.11 Allow Top-Level Viewport Focus Control:</strong>   If new top-level viewports (e.g.&nbsp;windows or tabs) are configured to open without explicit user request, the user can specify whether or not top-level viewports take the active keyboard focus when they open. (Level AA)</td>
 		<td class="pri">AA</td>
-		<td class="pri">&nbsp;</td>
+		<td class="pri"><p>ff Open new windows in a new tab instead and      When a link is opened in a new tab, switch to it immediately</p>
+	    <p>safari, IE, chrome, no focus control.</p>
+        <p>Note: test pages to popup a      window.</p>
+        <p><a href="http://rip747.github.io/popupwindow/">http://rip747.github.io/popupwindow/</a></p>
+        <p><a href="http://www.textfixer.com/html/javascript-pop-up-window.php">http://www.textfixer.com/html/javascript-pop-up-window.php</a></p></td>
 		<td class="pri">&nbsp;</td>
 	</tr>
 	<tr class="h3">
 		<td class="line-number">81</td>
 		<td class"whole-line"><strong class="title">1.8.12 Allow Same User Interface:</strong>   The user can specify that all top-level viewports (e.g.&nbsp;windows or tabs) follow the defined user interface configuration. (Level AA)</td>
 		<td class="pri">AA</td>
-		<td class="pri">&nbsp;</td>
+		<td class="pri"><p>@@ No browser does this</p>
+	    <p>Especially important for web applications where you log in a separate window, then a new window pops up with no browser user interface, so there are no controls or extensions for accessibility. </p></td>
 		<td class="pri">&nbsp;</td>
 	</tr>
 	<tr class="h3">
@@ -489,23 +500,23 @@ Guidelines Working Group (UAWG) produced in anticipation of Candidate Recommenda
 		<td class"whole-line"><p><strong class="title">1.8.13 Multi-Column Text Reflow:</strong>  The user can specify that recognized multi-column text blocks each be reflowed into a single column. (Level AA) </p>
 	    <p><strong class="title">Note:</strong> Some layouts may become unusable if author-specified layout is overridden. In this case, the user can turn linearization off and try another strategy. It is recommended that user agents provide a convenient way for the user to turn this behavior on and off.</p></td>
 		<td class="pri">AA</td>
-		<td class="pri">&nbsp;</td>
-		<td class="pri">&nbsp;</td>
+		<td class="pri">Stylish addon for Firefox, Chrome and Safari</td>
+		<td class="pri">Stylish addon for Firefox, Chrome and Safari</td>
 	</tr>
 	<tr class="h3">
 		<td class="line-number">84</td>
 		<td class"whole-line"><strong class="title">1.8.14 Ignore Fixed Unit Dimensions:</strong>  The user can have the user agent override author-specified unit dimensions. (Level AA) </td>
 		<td class="pri">AA</td>
-		<td class="pri">&nbsp;</td>
-		<td class="pri">&nbsp;</td>
+		<td class="pri">Stylish addon for Firefox, Chrome and Safari</td>
+		<td class="pri">Stylish addon for Firefox, Chrome and Safari</td>
 	</tr>
 	<tr class="h3">
 		<td class="line-number">85</td>
 		<td class"whole-line"><p><strong class="title">1.8.15 Linearize Content:</strong>  The user can have recognized content rendered as a single column, overriding author-specified formatting of columns, tables, and positioning. (Level AA) </p>
 	    <p><strong class="title">Note:</strong> Some layouts may become unusable if author-specified layout is overridden. In this case, the user can turn linearization off and try another strategy. It is recommended that user agents provide a convenient way for the user to turn this behavior on and off.</p></td>
 		<td class="pri">AA</td>
-		<td class="pri">&nbsp;</td>
-		<td class="pri">&nbsp;</td>
+		<td class="pri">Turn off stylesheets FCIOS</td>
+		<td class="pri">Turn off stylesheets FCIOS</td>
 	</tr>
 	<tr class="h3">
 		<td class="line-number">87</td>
