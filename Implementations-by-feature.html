@@ -113,6 +113,7 @@ tr.h1 td.whole-line, tr.h2 td.whole-line {
 <h2>Status</h2>
 <p>This is a working document from the User Agent Accessibility 
 Guidelines Working Group (UAWG) produced in anticipation of Candidate Recommendation which provides <strong>informal</strong> evaluation of user agents and their implementation of the UAAG 2.0 success criteria. The User Agent Accessibility Guidelines (UAAG) 2.0 is not complete and is still subject to change. Any information in this document is a <strong>preliminary opinion</strong> and <strong>should not be considered</strong> as a statement of conformance. </p>
+<p>If the block is <strong>blank</strong>, it means that UAWG has not yet discussed it. </p>
 <p>See also: </p>
 <p><a href="http://w3c.github.io/UAAG/UAAG20/">UAAG 2.0 Editors' Draft</a> on <a href="https://github.com/w3c/UAAG">Github</a><br />
   <a href="http://w3c.github.io/UAAG/UAAG20-Reference/">UAAG 2.0 Reference Editors' Draft</a> on Github <br />
@@ -491,9 +492,9 @@ Guidelines Working Group (UAWG) produced in anticipation of Candidate Recommenda
 		<td class="line-number">81</td>
 		<td class"whole-line"><strong class="title">1.8.12 Allow Same User Interface:</strong>   The user can specify that all top-level viewports (e.g.&nbsp;windows or tabs) follow the defined user interface configuration. (Level AA)</td>
 		<td class="pri">AA</td>
-		<td class="pri"><p>@@ No browser does this</p>
+		<td class="pri"><p>Opening applications in a new tab (FCIOS)</p>
 	    <p>Especially important for web applications where you log in a separate window, then a new window pops up with no browser user interface, so there are no controls or extensions for accessibility. </p></td>
-		<td class="pri">&nbsp;</td>
+		<td class="pri">Opening applications in a new tab (FCIOS)</td>
 	</tr>
 	<tr class="h3">
 		<td class="line-number">82</td>
@@ -515,15 +516,18 @@ Guidelines Working Group (UAWG) produced in anticipation of Candidate Recommenda
 		<td class"whole-line"><p><strong class="title">1.8.15 Linearize Content:</strong>  The user can have recognized content rendered as a single column, overriding author-specified formatting of columns, tables, and positioning. (Level AA) </p>
 	    <p><strong class="title">Note:</strong> Some layouts may become unusable if author-specified layout is overridden. In this case, the user can turn linearization off and try another strategy. It is recommended that user agents provide a convenient way for the user to turn this behavior on and off.</p></td>
 		<td class="pri">AA</td>
-		<td class="pri">Turn off stylesheets FCIOS</td>
-		<td class="pri">Turn off stylesheets FCIOS</td>
+		<td class="pri"><p>Turn off stylesheets FCIOS</p>
+		  webdeveloper - firefox - (MIscellaneous menu -&gt; Linearize page)</td>
+		<td class="pri"><p>Opera - http://help.opera.com/Windows/12.10/en/stylemodes.html</p>
+      <p>Web Developer Toolbar for Chrome: <a href="https://chrome.google.com/webstore/detail/yourhere/fkandkgadbpobooanbmiiinlelnhbabm">https://chrome.google.com/webstore/detail/yourhere/fkandkgadbpobooanbmiiinlelnhbabm</a></p></td>
 	</tr>
 	<tr class="h3">
 		<td class="line-number">87</td>
 		<td class"whole-line"><strong class="title"> 1.8.16 Provide Web Page Bookmarks:</strong>  The user can mark items in a web page, then use shortcuts to navigate back to marked items. The user can specify whether a navigation mark disappears after a session, or is persistent across sessions. (Level AAA) </td>
 		<td class="pri">AAA</td>
-		<td class="pri">&nbsp;</td>
-		<td class="pri">&nbsp;</td>
+		<td class="pri"><p>Chrome -	    scroll marker - chrome -  <a href="https://chrome.google.com/webstore/detail/scroll-marker/jdoinodpdahlmpgmpmhonheidpjhhnid?hl=en">https://chrome.google.com/webstore/detail/scroll-marker/jdoinodpdahlmpgmpmhonheidpjhhnid?hl=en</a> </p>
+	    <p>Chrome -yourhere placemarker - chrome -  <a href="https://chrome.google.com/webstore/detail/yourhere/fkandkgadbpobooanbmiiinlelnhbabm">https://chrome.google.com/webstore/detail/yourhere/fkandkgadbpobooanbmiiinlelnhbabm</a> </p></td>
+		<td class="pri">Safari -	    canisbos Placemarker - safari <a href="http://canisbos.com/placemarker">http://canisbos.com/placemarker</a>  </td>
 	</tr>
 	<tr class="h3">
 		<td class="line-number">90</td>
@@ -552,8 +556,8 @@ Guidelines Working Group (UAWG) produced in anticipation of Candidate Recommenda
 		<td class="line-number">96</td>
 		<td class"whole-line"><strong class="title">1.10.2 Show Element Hierarchy:</strong>  The user can determine the path of element nodes going from the root element of the element hierarchy to the currently focused or selected element. (Level AAA)</td>
 		<td class="pri">AAA</td>
-		<td class="pri">&nbsp;</td>
-		<td class="pri">&nbsp;</td>
+		<td class="pri">web inspector - chrome https://chrome.google.com/webstore/detail/web-inspector/enibedkmbpadhfofcgjcphipflcbpelf?hl=en</td>
+		<td class="pri">webdeveloper for chrome and opera also</td>
 	</tr>
 	<tr class="h3">
 		<td class="line-number">101</td>
@@ -583,8 +587,8 @@ Guidelines Working Group (UAWG) produced in anticipation of Candidate Recommenda
 		<td class="line-number">104</td>
 		<td class"whole-line"><strong class="title">2.1.4 Separate Selection from Activation:</strong>  The user can specify that focus and selection can be moved without causing further changes in focus, selection, or the state of controls, by either the user agent or author-supplied content. (Level A)</td>
 		<td class="pri">A</td>
-		<td class="pri">&nbsp;</td>
-		<td class="pri">&nbsp;</td>
+		<td class="pri">Everyone does it except the radio button. Does it behave this way because it is specified in HTML5? 2007 wiki page with instructions for that behavior: http://www.w3.org/wiki/RadioButton - should be an example for Meets WCAG by default</td>
+		<td class="pri">Everyone does this for everything except the radio button. </td>
 	</tr>
 	<tr class="h3">
 		<td class="line-number">105</td>
@@ -698,40 +702,25 @@ Guidelines Working Group (UAWG) produced in anticipation of Candidate Recommenda
 		<td class="line-number">127</td>
 		<td class"whole-line"><strong class="title">2.4.5 Alternative Content Search:</strong>  The user can perform text searches within alternative content that is text (e.g.&nbsp;text alternatives for non-text content, captions) even when the alternative content is not rendered onscreen. (Level AA)</td>
 		<td class="pri">AA</td>
-		<td class="pri">&nbsp;</td>
-		<td class="pri">&nbsp;</td>
-	</tr>
-	<tr class="h3">
-		<td class="line-number">130</td>
-		<td class"whole-line"><strong class="title">2.5.1 Show Location in Hierarchy:</strong> When the user agent is presenting hierarchical information, but the hierarchy is not reflected in a standardized fashion in the DOM or platform accessibility services, the user can view the path of nodes leading from the root of the hierarchy to a specified element. (Level AA)</td>
-		<td class="pri">AA</td>
-		<td class="pri">F - firebug</td>
-		<td class="pri">Chrome- hit F12</td>
+		<td class="pri"><p>for alt text - webdeveloper - firefox - https://chrome.google.com/webstore/detail/yourhere/fkandkgadbpobooanbmiiinlelnhbabm reveal alt then you can search</p>
+		  <p>The extension reveals it and then it is searchable. The extension doesn't make it searchable. <br />
+		  <br />
+		  chrome bug https://code.google.com/p/chromium/issues/detail?id=496232<br />
+	    ff bug https://bugzilla.mozilla.org/show_bug.cgi?id=158757</p></td>
+		<td class="pri">webdeveloper - chrome https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm?hl=en reveal alt then search</td>
 	</tr>
 	<tr class="h3">
 		<td class="line-number">131</td>
-		<td class"whole-line"><strong class="title">2.5.2 Provide Structural Navigation by Heading and within Tables:</strong>  The user agent provides at least the following types of structural navigation, where the structure types are recognized: (Level AA)<br/> *&nbsp;By heading<br/> *&nbsp;By content sections<br/> *&nbsp;Within tables</td>
+		<td class"whole-line"><strong class="title">2.5.1 Provide Structural Navigation by Heading and within Tables:</strong>  The user agent provides at least the following types of structural navigation, where the structure types are recognized: (Level AA)<br/> *&nbsp;By heading<br/> *&nbsp;By content sections<br/> *&nbsp;Within tables</td>
 		<td class="pri">AA</td>
-		<td class="pri">&nbsp;</td>
-		<td class="pri">&nbsp;</td>
-	</tr>
-	<tr class="h3">
-		<td class="line-number">132</td>
-		<td class"whole-line"><strong class="title">2.5.3 Configure Structural Navigation and Views:</strong> The user can configure which elements are used for structural navigation and outline views. (Level AAA)</td>
-		<td class="pri">AAA</td>
-		<td class="pri">Chrome with ChromeVox add-on provides next/previous navigation through elements of various types.</td>
-		<td class="pri">&nbsp;</td>
-	</tr>
-	<tr class="h3">
-		<td class="line-number">135</td>
-		<td class"whole-line"><strong class="title">2.6.1 Allow Access and Activation of Input Methods:</strong> The user agent provides a means for the user to determine recognized input methods explicitly associated with an element, and a means for the user to activate those methods in a modality independent manner. (Level AA)</td>
-		<td class="pri">AA</td>
-		<td class="pri">&nbsp;</td>
-		<td class="pri">&nbsp;</td>
+		<td class="pri"><p>headingsMap - Firefox https://addons.mozilla.org/en-us/firefox/addon/headingsmap/</p>
+	    <p>landmark nav - Firefox - https://github.com/matatk/landmarks	    </p>
+	    <p>Chrome with ChromeVox add-on provides next/previous navigation through elements of various types.</p></td>
+		<td class="pri">scrollbar of content - chrome https://chrome.google.com/webstore/detail/scrollbar-of-contents/cfmkncejaemmcobmaabfigljmnkeecdm</td>
 	</tr>
 	<tr class="h3">
 		<td class="line-number">138</td>
-		<td class"whole-line"><p><strong class="title">2.7.1 Allow Persistent Accessibility Settings:</strong>  User agent accessibility preference settings persist between sessions. (Level A) </p>
+		<td class"whole-line"><p><strong class="title">2.6.1 Allow Persistent Accessibility Settings:</strong>  User agent accessibility preference settings persist between sessions. (Level A) </p>
 	    <p><strong class="title">Note:</strong> User agents may have a public access setting that turns this off. </p></td>
 		<td class="pri">A</td>
 		<td class="pri">Firefox, Chrome, IE, Opera, Safari</td>
@@ -739,35 +728,41 @@ Guidelines Working Group (UAWG) produced in anticipation of Candidate Recommenda
 	</tr>
 	<tr class="h3">
 		<td class="line-number">140</td>
-		<td class"whole-line"><strong class="title">2.7.2 Allow Restore All to Default:</strong>  The user can restore all preference settings to default values. (Level A) </td>
+		<td class"whole-line"><strong class="title">2.6.2 Allow Restore All to Default:</strong>  The user can restore all preference settings to default values. (Level A) </td>
 		<td class="pri">A</td>
-		<td class="pri">&nbsp;</td>
-		<td class="pri">&nbsp;</td>
+		<td class="pri"><p>Chrome &quot;reset browser&quot;,  Google Chrome has an option that will reset itself to its default settings. To find this option, open Chrome's menu and select Settings. Perform a search for “reset browser” and you'll see the Reset browser settings button.</p>
+	    <p>IE has a button in Settings</p></td>
+		<td class="pri"> <p>Refresh Firefox - reset add-ons and settings | Firefox Help https://support.mozilla.org/en-US/kb/refresh-firefox-reset-add-ons-and-settings<br />
+		  &quot;The refresh feature works by creating a new profile folder for you while saving your important data.<br />
+	    Add-ons which are normally stored inside the Firefox profile folder, such as extensions and themes, will be removed. Add-ons stored in other locations, such as plugins, will not be removed but any modified preferences (such as plugins you have disabled) will be reset.&quot;</p>
+	    ff has extension for retore to default without removing addons http://chrispederick.com/</td>
 	</tr>
 	<tr class="h3">
 		<td class="line-number">141</td>
-		<td class"whole-line"><strong class="title">2.7.3 Allow Multiple Sets of Preference Settings:</strong>  The user can save and retrieve multiple sets of user agent preference settings. (Level AA) </td>
+		<td class"whole-line"><strong class="title">2.6.3 Allow Multiple Sets of Preference Settings:</strong>  The user can save and retrieve multiple sets of user agent preference settings. (Level AA) </td>
 		<td class="pri">AA</td>
-		<td class="pri">&nbsp;</td>
-		<td class="pri">&nbsp;</td>
+		<td class="pri">Firefox can do Profiles https://support.mozilla.org/en-US/kb/profile-manager-create-and-remove-firefox-profiles</td>
+		<td class="pri"><p>Chrome - Browser User Profile (can it be used across one Google ID?) http://www.pcworld.com/article/2089364/how-to-create-and-manage-multiple-user-profiles-in-chrome.html</p></td>
 	</tr>
 	<tr class="h3">
 		<td class="line-number">142</td>
-		<td class"whole-line"><strong class="title">2.7.4 Allow Preference Changes from outside the User Interface:</strong>  The user can adjust any preference settings required to meet the User Agent Accessibility Guidelines (UAAG) 2.0 from outside the UA user interface. (Level AAA)</td>
+		<td class"whole-line"><strong class="title">2.6.4 Allow Preference Changes from outside the User Interface:</strong>  The user can adjust any preference settings required to meet the User Agent Accessibility Guidelines (UAAG) 2.0 from outside the UA user interface. (Level AAA)</td>
 		<td class="pri">AAA</td>
-		<td class="pri">&nbsp;</td>
-		<td class="pri">&nbsp;</td>
+		<td class="pri"><p>All Desktop browsers used to have .ini files in WIndows. Firefox profile files can be changed by expert users. On Mac, Profiles folder under User -&gt; Libraries -&gt; Application Support -&gt; Firefox. There is access from Inside FF Help menu. </p>
+	    <p>Stupid Geek Tricks: Hacking the Firefox Profile Data Storage<br />
+          http://www.howtogeek.com/69051/stupid-geek-tricks-hacking-the-firefox-profile-data-storage/<br />          &quot;Using an open source program, SQLite Database Browser, you can not only see the structure of the individual databases but browse and, if you are so inclined, manipulate all the data in each of the tables.&quot;</p></td>
+		<td class="pri">Chrome Windows -  %LOCALAPPDATA%\Google\Chrome\User Data\ huge folder - not user friendly , but it is possible to edit</td>
 	</tr>
 	<tr class="h3">
 		<td class="line-number">143</td>
-		<td class"whole-line"><strong class="title">2.7.5 Make Preference Settings Transferable:</strong>  The user can transfer all compatible user agent preference settings between devices. (Level AAA) </td>
+		<td class"whole-line"><strong class="title">2.6.5 Make Preference Settings Transferable:</strong>  The user can transfer all compatible user agent preference settings between devices. (Level AAA) </td>
 		<td class="pri">AAA</td>
-		<td class="pri">&nbsp;</td>
-		<td class="pri">&nbsp;</td>
+		<td class="pri">Transfer the Profile to Another Computer. Close Mozilla Firefox, press &quot;Windows-X&quot; to open the Windows Power User menu and then click &quot;Run&quot; to open the Run utility. Type &quot;%APPDATA%\Mozilla\Firefox\Profiles\&quot; (without the quotation marks) and press &quot;Enter&quot; to open Firefox's Profiles folder. <a href="http://smallbusiness.chron.com/transfer-firefox-profile-new-computer-78755.html">  http://smallbusiness.chron.com/transfer-firefox-profile-new-computer-78755.html</a></td>
+		<td class="pri">chrome - windows -  %LOCALAPPDATA%\Google\Chrome\User Data\ huge folder - just transfer the &quot;default&quot; folder</td>
 	</tr>
 	<tr class="h3">
 		<td class="line-number">146</td>
-		<td class"whole-line"><strong class="title">2.8.1 Customize Display of Controls for User Interface Commands, Functions, and Extensions:</strong>  The user can customize which user agent commands, functions, and extensions are displayed within the user agent user interface as follows: (Level AA)<br/> *&nbsp;Show: The user can choose to display any controls available within the user agent user interface, including user-installed extensions. It is acceptable to limit the total number of controls that are displayed onscreen.<br/> *&nbsp;Simplify: The user can simplify the default user interface by choosing to display only commands essential for basic operation (e.g.&nbsp;by hiding some controls).<br/> *&nbsp;Reposition: The user can choose to reposition individual controls within containers (e.g.&nbsp;toolbars or tool palettes), as well as reposition the containers themselves to facilitate physical access (e.g.&nbsp;to minimize hand travel on touch screens, or to facilitate preferred hand access on handheld mobile devices).<br/> *&nbsp;Assign Activation Keystrokes or Gestures: The user can choose to view, assign or change default keystrokes or gestures used to activate controls.<br/> *&nbsp;Reset: The user has the option to reset the containers and controls to their default configuration. </td>
+		<td class"whole-line"><strong class="title">2.7.1 Customize Display of Controls for User Interface Commands, Functions, and Extensions:</strong>  The user can customize which user agent commands, functions, and extensions are displayed within the user agent user interface as follows: (Level AA)<br/> *&nbsp;Show: The user can choose to display any controls available within the user agent user interface, including user-installed extensions. It is acceptable to limit the total number of controls that are displayed onscreen.<br/> *&nbsp;Simplify: The user can simplify the default user interface by choosing to display only commands essential for basic operation (e.g.&nbsp;by hiding some controls).<br/> *&nbsp;Reposition: The user can choose to reposition individual controls within containers (e.g.&nbsp;toolbars or tool palettes), as well as reposition the containers themselves to facilitate physical access (e.g.&nbsp;to minimize hand travel on touch screens, or to facilitate preferred hand access on handheld mobile devices).<br/> *&nbsp;Assign Activation Keystrokes or Gestures: The user can choose to view, assign or change default keystrokes or gestures used to activate controls.<br/> *&nbsp;Reset: The user has the option to reset the containers and controls to their default configuration. </td>
 		<td class="pri">AA</td>
 		<td class="pri">&nbsp;</td>
 		<td class="pri">&nbsp;</td>
