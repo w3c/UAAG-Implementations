@@ -764,89 +764,116 @@ Guidelines Working Group (UAWG) produced in anticipation of Candidate Recommenda
 		<td class="line-number">146</td>
 		<td class"whole-line"><strong class="title">2.7.1 Customize Display of Controls for User Interface Commands, Functions, and Extensions:</strong>  The user can customize which user agent commands, functions, and extensions are displayed within the user agent user interface as follows: (Level AA)<br/> *&nbsp;Show: The user can choose to display any controls available within the user agent user interface, including user-installed extensions. It is acceptable to limit the total number of controls that are displayed onscreen.<br/> *&nbsp;Simplify: The user can simplify the default user interface by choosing to display only commands essential for basic operation (e.g.&nbsp;by hiding some controls).<br/> *&nbsp;Reposition: The user can choose to reposition individual controls within containers (e.g.&nbsp;toolbars or tool palettes), as well as reposition the containers themselves to facilitate physical access (e.g.&nbsp;to minimize hand travel on touch screens, or to facilitate preferred hand access on handheld mobile devices).<br/> *&nbsp;Assign Activation Keystrokes or Gestures: The user can choose to view, assign or change default keystrokes or gestures used to activate controls.<br/> *&nbsp;Reset: The user has the option to reset the containers and controls to their default configuration. </td>
 		<td class="pri">AA</td>
-		<td class="pri">&nbsp;</td>
-		<td class="pri">&nbsp;</td>
+		<td class="pri"><p>a) SHOW: Firefox and IE allow hiding and revealing toolbars and putting them in different orders.</p>
+		  <p>b) SIMPLIFY: Firefox allows show and hide, and hide = Simplify. S3 &amp; Menu Wizard extensions</p>
+		  <p>c) REPOSITION: FIrefox has reposition in Menu Wizard at the item level https://addons.mozilla.org/en-us/firefox/addon/s3menu-wizard/</p>
+		  <p>d) GESTURES: FIrefox can assign keystrokes with an extension: Customizable Shortcuts https://addons.mozilla.org/en-US/firefox/addon/customizable-shortcuts/</p>
+		  <p>e) RESET:  IE and Firefox have a &quot;restore to default&quot; </p>
+	    <p>Firefox: &quot;The menu button new fx menu gives you convenient access to your favorite Firefox features. Don't like the default arrangement? It's easy to customize.&quot; <br />Customize Firefox controls, buttons and toolbars | Firefox Help<br />
+	      https://support.mozilla.org/en-US/kb/customize-firefox-controls-buttons-and-toolbars</p>
+	    <p>Customize Your Menus in Firefox http://www.howtogeek.com/howto/6985/customize-your-menus-in-firefox/ &quot;Would you like a way to edit menus and remove the extra entries that you do not use or need? Now you can with the Menu Editor extension for Firefox.&quot;</p>
+	    <p>Chrome Customize Toolbar: https://support.google.com/toolbar/answer/2392132?hl=en	    </p>
+	    <p>Mercury browser can turn controls on/off but won't allow positioning. </p>
+	    <p>&nbsp;</p></td>
+		<td class="pri"><p>a) SHOW: Firefox and IE allow hiding and revealing toolbars and putting them in different orders. Chrome - Proper Menubar - https://chrome.google.com/webstore/detail/proper-menubar/egclcjdpndeoioimlbbbmdhcaopnedkp?hl=en</p>
+		  <p>b) SIMPLIFY:IE allows hiding toolbars</p>
+		  <p>c) REPOSITION: IE has reposition of toolbars</p>
+		  <p>d) GESTURES: Opera keyboard control mapper. Apple has Gesture Wizard on iOS. Safari: Swipe Safari Adds Configurable Gestures to Safari on iPhone http://lifehacker.com/5911935/swipe-safari-adds-tons-of-configurable-gestures-to-safari-on-iphone</p>
+		  <p>e) RESET: IE has a &quot;restore to default&quot; </p>
+	    <p>&nbsp;</p></td>
 	</tr>
 	<tr class="h3">
 		<td class="line-number">149</td>
-		<td class"whole-line"><strong class="title">2.9.1 Adjustable Time Limits:</strong>   The UA user interface does not include time limits or at least one of the following is true: (Level A)<br/> (a)&nbsp;Turn Off: Users are allowed to turn off the time limit before encountering it; or<br/> (b)&nbsp;Adjust: Users are allowed to adjust the time limit before encountering it over a wide range that is at least ten times the length of the default setting; or<br/> (c)&nbsp;Extend: Users are warned before time expires and given at least 20 seconds to extend the time limit with a simple action (e.g.&nbsp;"press the space bar"), and users are allowed to extend the time limit at least ten times; or<br/> (d)&nbsp;Real-time Exception: The time limit is a required part of a real-time event and no alternative to the time limit is possible; or<br/> (e)&nbsp;Essential Exception: The time limit is essential and extending it would invalidate the activity; or<br/> (f)&nbsp;20 Hour Exception: The time limit is longer than 20 hours. </td>
+		<td class"whole-line"><strong class="title">2.8.1 Adjustable Time Limits:</strong>   The UA user interface does not include time limits or at least one of the following is true: (Level A)<br/> (a)&nbsp;Turn Off: Users are allowed to turn off the time limit before encountering it; or<br/> (b)&nbsp;Adjust: Users are allowed to adjust the time limit before encountering it over a wide range that is at least ten times the length of the default setting; or<br/> (c)&nbsp;Extend: Users are warned before time expires and given at least 20 seconds to extend the time limit with a simple action (e.g.&nbsp;"press the space bar"), and users are allowed to extend the time limit at least ten times; or<br/> (d)&nbsp;Real-time Exception: The time limit is a required part of a real-time event and no alternative to the time limit is possible; or<br/> (e)&nbsp;Essential Exception: The time limit is essential and extending it would invalidate the activity; or<br/> (f)&nbsp;20 Hour Exception: The time limit is longer than 20 hours. </td>
 		<td class="pri">A</td>
-		<td class="pri">&nbsp;</td>
-		<td class="pri">&nbsp;</td>
+		<td class="pri"><p>For the brower UI, not content UI. Hard to find examples of UI events that time out. Suggest Time Out on Hover on links. Firefox and Chrome don't have timeouts. IE times out in 5 seconds on hover on link (failure). </p>
+	    <p>FIrefox has no timeouts</p>
+	    <p>No examples of customized timeouts, but 2 examples with no timeouts is sufficient for implementations. </p></td>
+		<td class="pri">Chrome has no timeouts</td>
 	</tr>
 	<tr class="h3">
 		<td class="line-number">152</td>
-		<td class"whole-line"><strong class="title">2.10.1 Three Flashes or Below Threshold:</strong>  In its default configuration, the user agent does not display any UA user interface components that flashes more than three times in any one-second period, unless the flash is below general flash and red flash thresholds. (Level A) </td>
+		<td class"whole-line"><strong class="title">2.9.1 Three Flashes or Below Threshold:</strong>  In its default configuration, the user agent does not display any UA user interface components that flashes more than three times in any one-second period, unless the flash is below general flash and red flash thresholds. (Level A) </td>
 		<td class="pri">A</td>
-		<td class="pri">&nbsp;</td>
-		<td class="pri">&nbsp;</td>
+		<td class="pri">All browsers pass. No examples of flashing UI. </td>
+		<td class="pri">All browsers pass. No examples of flashing UI. </td>
 	</tr>
 	<tr class="h3">
 		<td class="line-number">153</td>
-		<td class"whole-line"><strong class="title">2.10.2 Three Flashes:</strong>  In its default configuration, the user agent does not display any UA user interface components that flashes more than three times in any one-second period (regardless of whether not the flash is below the general flash and red flash thresholds). (Level AAA) </td>
+		<td class"whole-line"><strong class="title">2.9.2 Three Flashes:</strong>  In its default configuration, the user agent does not display any UA user interface components that flashes more than three times in any one-second period (regardless of whether not the flash is below the general flash and red flash thresholds). (Level AAA) </td>
 		<td class="pri">AAA</td>
-		<td class="pri">&nbsp;</td>
-		<td class="pri">&nbsp;</td>
+		<td class="pri">All browsers pass. No examples of flashing UI. </td>
+		<td class="pri">All browsers pass. No examples of flashing UI. </td>
 	</tr>
 	<tr class="h3">
 		<td class="line-number">156</td>
-		<td class"whole-line"><strong class="title">2.11.1 Time-Based Media Load-Only:</strong>  The user can override the play on load of recognized time-based media content such that the content is not played until explicit user request. (Level A)</td>
+		<td class"whole-line"><strong class="title">2.10.1 Time-Based Media Load-Only:</strong>  The user can override the play on load of recognized time-based media content such that the content is not played until explicit user request. (Level A)</td>
 		<td class="pri">A</td>
-		<td class="pri">&nbsp;</td>
-		<td class="pri">&nbsp;</td>
+		<td class="pri"><p>Chrome: native Open Plug-in On Request</p></td>
+		<td class="pri"><p>Safari </p>
+	    <p>Firefox Options -&gt; Applications allows option of Always Ask. </p>
+	    <p>&nbsp;</p></td>
 	</tr>
 	<tr class="h3">
 		<td class="line-number">157</td>
-		<td class"whole-line"><strong class="title">2.11.2 Execution Placeholder:</strong>   The user can request a placeholder instead of executable content that would normally be contained within an on-screen area (e.g.&nbsp;Applet, Flash), until explicit user request to execute. (Level A)</td>
+		<td class"whole-line"><strong class="title">2.10.2 Execution Placeholder:</strong>   The user can request a placeholder instead of executable content that would normally be contained within an on-screen area (e.g.&nbsp;Applet, Flash), until explicit user request to execute. (Level A)</td>
 		<td class="pri">A</td>
-		<td class="pri">&nbsp;</td>
-		<td class="pri">&nbsp;</td>
+		<td class="pri">Firefox shows placeholder when &quot;Always Ask&quot; is selected</td>
+		<td class="pri">Also Chrome and Safari automatically show placeholder. </td>
 	</tr>
 	<tr class="h3">
 		<td class="line-number">158</td>
-		<td class"whole-line"><strong class="title">2.11.3 Execution Toggle:</strong>   The user can turn on/off the execution of dynamic or executable content (e.g.&nbsp;Javascript, canvas, media). (Level A) </td>
+		<td class"whole-line"><strong class="title">2.10.3 Execution Toggle:</strong>   The user can turn on/off the execution of dynamic or executable content (e.g.&nbsp;Javascript, canvas, media). (Level A) </td>
 		<td class="pri">A</td>
-		<td class="pri">&nbsp;</td>
-		<td class="pri">&nbsp;</td>
+		<td class="pri">Firefox extension: NoScript</td>
+		<td class="pri">Safari (native): execution toggle by site</td>
 	</tr>
 	<tr class="h3">
 		<td class="line-number">159</td>
-		<td class"whole-line"><strong class="title">2.11.4 Adjustable Playback Rate for Prerecorded Content:</strong>   The user can adjust the playback rate of prerecorded time-based media content, such that all of the following are true: (Level AA)<br/> *&nbsp;Playback Rate: The user can adjust the playback rate of the time-based media tracks to between 50% and 250% of real time.<br/> *&nbsp;Pitch: Speech whose playback rate has been adjusted by the user maintains pitch in order to limit degradation of the speech quality.<br/> *&nbsp;Synchronization: Audio and video tracks remain synchronized across this required range of playback rates.<br/> *&nbsp;Reset: The user agent provides a function that resets the playback rate to normal (100%).</td>
+		<td class"whole-line"><strong class="title">2.10.4 Adjustable Playback Rate for Prerecorded Content:</strong>   The user can adjust the playback rate of prerecorded time-based media content, such that all of the following are true: (Level AA)<br/> *&nbsp;Playback Rate: The user can adjust the playback rate of the time-based media tracks to between 50% and 250% of real time.<br/> *&nbsp;Pitch: Speech whose playback rate has been adjusted by the user maintains pitch in order to limit degradation of the speech quality.<br/> *&nbsp;Synchronization: Audio and video tracks remain synchronized across this required range of playback rates.<br/> *&nbsp;Reset: The user agent provides a function that resets the playback rate to normal (100%).</td>
 		<td class="pri">AA</td>
-		<td class="pri">&nbsp;</td>
-		<td class="pri">&nbsp;</td>
+		<td class="pri"><p>Accessible media players: BBC Player, JW Player, VLC, OzPlayer</p>
+	    <p>Adjustable playback rate is built into HTML5. How to enable in YouTube: http://lifehacker.com/5491852/enable-variable-speed-playback-in-youtube</p>
+	    <p>BBC Player: BBC player<br />
+        http://support.panopto.com/documentation/viewing/variable-speed-playback-vsp</p>
+	    <p> Html5 Youtube Video Speed Controller :: Add-ons for Firefox https://addons.mozilla.org/en-uS/firefox/addon/youtubevideospeedcontroller/ &quot;Html5 Youtube Video Speed Controller helps to change the playback speed of html5 video on youtube.&quot;	    </p>
+	    <p>Enounce MySpeed Player https://www.raymond.cc/blog/download/did/2987/</p></td>
+		<td class="pri"><p>Chrome: https://chrome.google.com/webstore/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk?hl=en</p>
+		  <p>Learning API http://www.learningapi.com/2012/04/variable-speed-playback-html5-video-feature/</p>
+	    <p>&nbsp;</p></td>
 	</tr>
 	<tr class="h3">
 		<td class="line-number">160</td>
-		<td class"whole-line"><strong class="title">2.11.5 Stop/Pause/Resume Time-Based Media:</strong>   The user can stop, pause, and resume rendered audio and animation content (e.g video, animation, changing text) that lasts three or more seconds at the default playback rate. (Level A) </td>
+		<td class"whole-line"><strong class="title">2.10.5 Stop/Pause/Resume Time-Based Media:</strong>   The user can stop, pause, and resume rendered audio and animation content (e.g video, animation, changing text) that lasts three or more seconds at the default playback rate. (Level A) </td>
 		<td class="pri">A</td>
-		<td class="pri">&nbsp;</td>
-		<td class="pri">&nbsp;</td>
+		<td class="pri">IE supports this by hitting Escape to stop recognized animation. </td>
+		<td class="pri"><p>Toggle animated GIFs :: Add-ons for Firefox https://addons.mozilla.org/en-us/firefox/addon/toggle-animated-gifs/</p>
+	    <p>Firefox intentionally disabled the ability to stop animated gifs in 2012. 825486 – Escape no longer stops animated GIFs https://bugzilla.mozilla.org/show_bug.cgi?id=825486. [Insert insulting term here.]</p></td>
 	</tr>
 	<tr class="h3">
 		<td class="line-number">161</td>
-		<td class"whole-line"><strong class="title">2.11.6 Navigation of Time-Based Media by Time:</strong>   If time-based media lasts three or more seconds at the default playback rate, the user can navigate it using a continuous scale and by relative time units. (Level A)</td>
+		<td class"whole-line"><strong class="title">2.10.6 Navigation of Time-Based Media by Time:</strong>   If time-based media lasts three or more seconds at the default playback rate, the user can navigate it using a continuous scale and by relative time units. (Level A)</td>
 		<td class="pri">A</td>
 		<td class="pri">&nbsp;</td>
 		<td class="pri">&nbsp;</td>
 	</tr>
 	<tr class="h3">
 		<td class="line-number">162</td>
-		<td class"whole-line"><strong class="title">2.11.7 Navigation of Time-Based Media by Semantics:</strong>   The user can navigate by semantic structure within the time-based media, such as by chapters or scenes present in the media. (Level AA) </td>
+		<td class"whole-line"><strong class="title">2.10.7 Navigation of Time-Based Media by Semantics:</strong>   The user can navigate by semantic structure within the time-based media, such as by chapters or scenes present in the media. (Level AA) </td>
 		<td class="pri">AA</td>
 		<td class="pri">&nbsp;</td>
 		<td class="pri">&nbsp;</td>
 	</tr>
 	<tr class="h3">
 		<td class="line-number">163</td>
-		<td class"whole-line"><strong class="title">2.11.8 Video Contrast and Brightness:</strong>   Users can adjust the contrast and brightness of visual time-based media. (Level AAA)</td>
+		<td class"whole-line"><strong class="title">2.10.8 Video Contrast and Brightness:</strong>   Users can adjust the contrast and brightness of visual time-based media. (Level AAA)</td>
 		<td class="pri">AAA</td>
 		<td class="pri">&nbsp;</td>
 		<td class="pri">&nbsp;</td>
 	</tr>
 	<tr class="h3">
 		<td class="line-number">166</td>
-		<td class"whole-line"><strong class="title">2.12.1 Platform Text Input Devices:</strong> If the platform supports text input using an input device, the user agent is compatible with this functionality. (Level A) </td>
+		<td class"whole-line"><strong class="title">2.11.1 Platform Text Input Devices:</strong> If the platform supports text input using an input device, the user agent is compatible with this functionality. (Level A) </td>
 		<td class="pri">A</td>
 		<td class="pri">&nbsp;</td>
 		<td class="pri">&nbsp;</td>
@@ -1048,6 +1075,7 @@ Guidelines Working Group (UAWG) produced in anticipation of Candidate Recommenda
 
 <p>Based on "ED-UAAG20-20150402-SC.txt" dated Thu Apr 2 09:59:34 2015 (W3C WAI UAAG 2.0 format).<br />
 </p>
+</div>
 <div id="footer">
   <h2>Document Information</h2>
   <p class="status"><strong>Status:</strong> Updated $Date: 2015-04-09 14:46:00 $</p>
