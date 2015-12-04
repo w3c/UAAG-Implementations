@@ -108,7 +108,7 @@ tr.h1 td.whole-line, tr.h2 td.whole-line {
 <h1>UAAG 2.0 Implementation Report Detail: Feature by Feature</h1>
 <dl>
   <dt>Updated on:</dt>
-  <dd>5 November, 2015</dd>
+  <dd>3 December, 2015</dd>
   <dt>This Version (Github)</dt>
   <dd><a href="http://w3c.github.io/UAAG-Implementations/Implementations-by-feature">http://w3c.github.io/UAAG-Implementations/Implementations-by-feature</a></dd>
   <dt>Latest Version</dt>
@@ -992,7 +992,20 @@ href="#def-platform" rel="glossary" title="definition: platform">platform</a>, a
 	</tr>
 	<tr class="h3">
 		<td class="line-number">196</td>
-		<td class"whole-line"><strong class="title">4.1.2 Expose Basic Properties:</strong>  For all user interface components (including UA user interface, rendered content, and generated content) the user agent makes  available the following properties and any change notifications via a platform accessibility service: (Level A)<br/> *&nbsp;Name<br/> *&nbsp;Role<br/> *&nbsp;State<br/> *&nbsp;Value<br/> *&nbsp;Selection<br/> *&nbsp;Focus </td>
+		<td class"whole-line"><strong class="title">4.1.2 Expose Accessible Properties:</strong>  For all user interface components (including <a href="http://w3c.github.io/UAAG/UAAG20/#def-ua-ui" rel="glossary" title="definition: user agent user interface">UA user interface</a>, <a href="http://w3c.github.io/UAAG/UAAG20/#def-rendered-content" rel="glossary" title="definition: rendered content">rendered content</a>, and generated content) the user agent makes <a href="http://w3c.github.io/UAAG/UAAG20/#def-programmatically-avail" rel="glossary" title="definition: available"> available</a> the following properties and any change notifications via<a href="http://w3c.github.io/UAAG/UAAG20/#def-access-platform-arch" title="definition: Platform Accessibility Service"> a platform accessibility service</a>(Level A)<br/>
+		  <ul>
+		    <li> Name, Role, State</li>
+		    <li>Value</li>
+		    <li>Selection</li>
+		    <li>Focus </li>
+		    <li>Bounding dimensions and coordinates</li>
+		    <li>Font family of text</li>
+		    <li>Foreground and background color for text</li>
+		    <li>Highlighting</li>
+		    <li><a href="http://w3c.github.io/UAAG/UAAG20/#def-keyboard-command">Keyboard commands</a></li>
+		    <li>Caret position</li>
+		    <li>Explicitly defined relationships  (e.g. ARIA relationships <a href="http://w3c.github.io/UAAG/UAAG20/#ref-ARIA10">[ARIA 1.0]</a>)</li>
+        </ul></td>
 		<td class="pri">A</td>
 		<td class="pri"> Chrome, IE, Firefox, Safari support all except selection. Need further investigation on selection</td>
 		<td class="pri">&nbsp;</td>
@@ -1019,18 +1032,11 @@ href="#def-platform" rel="glossary" title="definition: platform">platform</a>, a
 		<td class="pri">&nbsp;</td>
 	</tr>
 	<tr class="h3">
-		<td class="line-number">200</td>
-		<td class"whole-line"><strong class="title">4.1.6 Expose Additional Properties:</strong> For all user interface components (including UA user interface, rendered content, and generated content) the user agent makes  available the following properties and any change notifications via a platform accessibility service: (Level AA)<br/> *&nbsp;Bounding dimensions and coordinates<br/> *&nbsp;Font family of text<br/> *&nbsp;Font size of text<br/> *&nbsp;Foreground and background color for text<br/> *&nbsp;Change state/value notifications<br/> *&nbsp;Highlighting<br/> *&nbsp;Keyboard commands</td>
-		<td class="pri">AA</td>
-		<td class="pri">&nbsp;</td>
-		<td class="pri">&nbsp;</td>
-	</tr>
-	<tr class="h3">
 		<td class="line-number">204</td>
 		<td class"whole-line"><p><strong class="title">5.1.1 Comply with WCAG:</strong>  Web-based UA user interfaces meet the WCAG 2.0 success criteria. (Level A to meet WCAG 2.0 Level A success criteria; Level AA to meet WCAG 2.0 Level A and AA success criteria; and Level AAA to meet WCAG 2.0 Level A, AA, and AAA success criteria)</p>
 	    <p><strong class="title">Note:</strong> This success criterion does not apply to non-web-based UA user interfaces, but does include any parts of non-web-based user agents that are web-based (e.g.&nbsp;help systems). However, it is recommended that developers of non-web-based user agent user interfaces follow the Guidance on Applying WCAG 2.0 to Non-Web Information and Communications Technologies (WCAG2ICT) .</p></td>
 		<td class="pri">A to meet WCAG 2.0 Level A success criteria; Level AA to meet WCAG 2.0 Level A and AA success criteria; and Level AAA to meet WCAG 2.0 Level A, AA, and AAA success criteria</td>
-		<td class="pri">&nbsp;</td>
+		<td class="pri">Exceeds available resources to test individual user agents for WCAG.</td>
 		<td class="pri">&nbsp;</td>
 	</tr>
 	<tr class="h3">
@@ -1039,29 +1045,34 @@ href="#def-platform" rel="glossary" title="definition: platform">platform</a>, a
 	    <p><strong class="title">Note 1:</strong> If a conformance claim is filed, cite the implemented specifications in the conformance claim.</p>
 	    <p><strong class="title">Note 2:</strong> When a rendering requirement of another specification contradicts a requirement of UAAG 2.0, the user agent can disregard the rendering requirement of the other specification and still satisfy this guideline.</p></td>
 		<td class="pri">A</td>
-		<td class="pri">&nbsp;</td>
-		<td class="pri">&nbsp;</td>
+		<td class="pri"><p>See: http://caniuse.com/ and http://html5accessibility.com/</p>
+	    <p>According to HTML5Accessibility.com Chrome &amp; Opera are at 94.5% and Firefox 91% </p></td>
+		<td class="pri">According to HTML5Accessibility.com Chrome &amp; Opera are at 94.5% and Firefox 91% </td>
 	</tr>
 	<tr class="h3">
 		<td class="line-number">209</td>
 		<td class"whole-line"><strong class="title">5.1.3 Implement Accessibility Features of the Platform:</strong>   If the user agent contains non-web-based user interfaces, then those non-web-based user interfaces follow user interface accessibility guidelines for the platform. (Level A)</td>
 		<td class="pri">A</td>
-		<td class="pri">&nbsp;</td>
-		<td class="pri">&nbsp;</td>
+		<td class="pri">Internet Explorer on Windows</td>
+		<td class="pri">Safari on Macintosh</td>
 	</tr>
 	<tr class="h3">
 		<td class="line-number">210</td>
-		<td class"whole-line"><strong class="title">5.1.5 Allow Content Elements to be Rendered in Alternative Viewers:</strong>  The user can select content elements and have them rendered in alternative viewers. (Level AA)</td>
+		<td class"whole-line"><strong class="title">5.1.4 Allow Content Elements to be Rendered in Alternative Viewers:</strong>  The user can select content elements and have them rendered in alternative viewers. (Level AA)</td>
 		<td class="pri">AA</td>
-		<td class="pri">&nbsp;</td>
-		<td class="pri">&nbsp;</td>
+		<td class="pri"><p>PDF can be rendered in the browser or an alternative viewer</p>
+	    <p>All major browsers and most mobile browsers </p></td>
+		<td class="pri"><p>PDF can be rendered in the browser or an alternative viewer</p>
+        <p>All major browsers and most mobile browsers </p></td>
 	</tr>
 	<tr class="h3">
 		<td class="line-number">211</td>
-		<td class"whole-line"><strong class="title">5.1.6 Enable Reporting of User Agent Accessibility Faults:</strong>  The user agent provides a mechanism for users to report user agent accessibility issues. (Level AAA)</td>
+		<td class"whole-line"><strong class="title">5.1.5 Enable Reporting of User Agent Accessibility Faults:</strong>  The user agent provides a mechanism for users to report user agent accessibility issues. (Level AAA)</td>
 		<td class="pri">AAA</td>
-		<td class="pri">&nbsp;</td>
-		<td class="pri">&nbsp;</td>
+		<td class="pri"><p>See <a href="https://www.paciellogroup.com/blog/2014/06/filing-bugs/">https://www.paciellogroup.com/blog/2014/06/filing-bugs/</a></p>
+	    <p><a href="https://support.microsoft.com/en-us/answerdesk/accessibility">Microsoft Disability Answer Desk</a></p>
+	    <p>Microsoft Edge Feedback &amp; Reporting menu option</p></td>
+		<td class="pri">Chrome has Help -&gt; Report an Issue</td>
 	</tr>
 </table>
 
